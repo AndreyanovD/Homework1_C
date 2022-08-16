@@ -3,7 +3,7 @@
 
 void Zadacha52()
 {
-    double[,] array = new double[5, 5];
+    double[,] array = new double[6, 4];
     FillArray(array);
     PrintArray(array);
     double[] averageWalue = Average(array);
@@ -11,7 +11,7 @@ void Zadacha52()
     Console.WriteLine("Среднее арифметическое каждого столбца: ");
     for (int i = 0; i < averageWalue.Length; i++)
     {
-        Console.Write(averageWalue[i] + "\t");
+        Console.Write(Math.Round(averageWalue[i],3) + "\t");
     }
 }
 
